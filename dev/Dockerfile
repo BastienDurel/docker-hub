@@ -6,13 +6,14 @@ RUN apt update ; DEBIAN_FRONTEND=noninteractive apt -q -y upgrade ; \
     DEBIAN_FRONTEND=noninteractive apt install -q -y \
 	build-essential \
 	bzip2 \
-  cmake \
+	cmake \
 	curl \
 	debhelper \
 	dpkg-dev \
 	g++ \
 	git \
-  libicu-dev \
+	libboost-all-dev \
+	libicu-dev \
 	libexpat1-dev \
 	libluabind-dev \
 	libluajit-5.1-dev \
@@ -27,6 +28,6 @@ RUN apt update ; DEBIAN_FRONTEND=noninteractive apt -q -y upgrade ; \
 	openjdk-8-jdk \
 	openjdk-8-jre-headless \
 	pkg-config \
-  python-minimal \
+	python-minimal \
 	wget \
     && apt-get clean
