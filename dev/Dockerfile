@@ -1,7 +1,7 @@
 FROM debian:stretch
 MAINTAINER Bastien Durel bastien.docker@durel.org
 COPY locale.gen /etc/locale.gen
-ENV LANG=fr_FR.UTF-8
+ENV LANG=en_US.UTF-8
 RUN apt update ; DEBIAN_FRONTEND=noninteractive apt -q -y upgrade ; \
     DEBIAN_FRONTEND=noninteractive apt install -q -y \
 	build-essential \
