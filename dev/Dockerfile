@@ -26,5 +26,6 @@ RUN apt update ; DEBIAN_FRONTEND=noninteractive apt -q -y upgrade ; \
 	openjdk-8-jdk \
 	openjdk-8-jre-headless \
 	pkg-config \
+  python-minimal \
 	wget \
     && apt-get clean
