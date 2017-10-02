@@ -6,6 +6,7 @@ RUN apt update ; DEBIAN_FRONTEND=noninteractive apt -q -y upgrade ; \
     DEBIAN_FRONTEND=noninteractive apt install -q -y \
 	build-essential \
 	bzip2 \
+  cmake \
 	curl \
 	debhelper \
 	dpkg-dev \
